@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{57EBF386-52C3-4FDE-81AC-E62723C20C58}</ProjectGuid>
+    <ProjectGuid>{30DB0274-1037-4932-BF85-90B650B6FECF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ImplicitOperatorOverloads.Tests</RootNamespace>
-    <AssemblyName>ImplicitOperatorOverloads.Tests</AssemblyName>
+    <RootNamespace>GenericAbstractFactory.Tests</RootNamespace>
+    <AssemblyName>GenericAbstractFactory.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -42,22 +42,18 @@
     <Reference Include="xunit">
       <HintPath>..\packages\xunit.1.9.2\lib\net20\xunit.dll</HintPath>
     </Reference>
-    <Reference Include="xunit.should">
-      <HintPath>..\packages\xunit.should.1.1\lib\net35\xunit.should.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ImplicitOperatorOverloads\ImplicitOperatorOverloads.csproj">
-      <Project>{A7B2700B-D449-40DB-8753-38EB45A3CC8C}</Project>
-      <Name>ImplicitOperatorOverloads</Name>
+    <ProjectReference Include="..\GenericAbstractFactory\GenericAbstractFactory.csproj">
+      <Project>{ACA8140A-D3C8-498E-B026-4053402E3C06}</Project>
+      <Name>GenericAbstractFactory</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
