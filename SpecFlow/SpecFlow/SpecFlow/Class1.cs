@@ -8,5 +8,21 @@ namespace SpecFlow
 {
     public class Class1
     {
+
+        public void ClickOnSomePage(string pageName)
+        {
+            switch (pageName)
+            {
+                    Dictionary.TryGetValue("asdasd")
+                case "Stock Management":
+                    DoSomething();
+                    return;
+                case "Select Config":
+                    DoSomethingElse();
+                    return;
+
+            }
+        }
+
     }
 }
